@@ -1,0 +1,40 @@
+@import '~normalize.css';
+@import "~bootstrap/scss/bootstrap.scss";
+
+$maincolor: #e3c9dc;
+a{
+   display: block;
+   &:hover{
+      text-decoration: none;
+   }
+}
+
+body{
+   background-color: $maincolor;
+}
+
+.logo{
+   & img{
+      width: 50%;
+   }
+}
+
+.navbar{
+   &__links{
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+   }
+   &__link{
+      color: #000000;
+      border-radius: 50px;
+      border-radius: 50px;
+background: #e3c9dc;
+box-shadow:  15px -15px 30px #c1abbb, 
+             -15px 15px 30px #ffe7fd;
+      padding: 10px 20px;
+      margin-right: 50px;
+   }
+
+}
