@@ -25,16 +25,24 @@ body{
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
+      margin-top: 100px;
    }
    &__link{
       color: #000000;
+      font-weight: bold;
       border-radius: 50px;
-      border-radius: 50px;
-background: #e3c9dc;
-box-shadow:  15px -15px 30px #c1abbb, 
-             -15px 15px 30px #ffe7fd;
+      background: #e3c9dc;
+      box-shadow:  20px -20px 30px #c1abbb, 
+                  -20px 20px 30px #ffe7fd;
       padding: 10px 20px;
       margin-right: 50px;
+      transition: all 0.3s;
+      &:hover{
+         box-shadow:  5px -5px 15px #c1abbb, 
+                     -5px 5px 15px #ffe7fd;
+         color: lighten($color: #000000, $amount: 25%);
+
+      }
    }
 
 }
