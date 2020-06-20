@@ -72,7 +72,11 @@ module.exports = {
             {
                from: path.resolve(__dirname, './src/img'),
                to: path.resolve(__dirname, 'dist/img')
-            }
+            },
+            // {
+            //    from: path.resolve(__dirname, './src/fonts'),
+            //    to: path.resolve(__dirname, 'dist/fonts')
+            // }
          ]
       }),
       new MiniCssExtractPlugin({
@@ -95,7 +99,13 @@ module.exports = {
          },
          {
             test: /\.(ttf|woff|woff2|eot)$/,
-            use: ['file-loader']
+            use: [{
+                  loader: "file-loader",
+                  options: {
+                  name: "[name].[ext]",
+                  outputPath: "fonts",
+                  }
+               }]
          },
          { 
             test: /\.js$/, 

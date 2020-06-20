@@ -1,31 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Dmitri Klimovich porfolio</title>
-   <link rel="shortcut icon" href="img\favicon-32x32.png" type="image/png">
-   
+   <link rel="shortcut icon" href="img\favicon-32x32.png" type="image/png" />
 </head>
+
 <body>
-   <div class="container">
-      <div class="row">
-         <nav class="navbar">
+   <header class="header">
+      <div class="container">
+         <div class="row align-items-center">
             <div class="col-lg-4">
-               <div class="logo">
-                  <img src="img\logo.png" alt="logo">
+               <div class="header__logo">
+                  <img src="img\logo.png" alt="logo" />
                </div>
             </div>
-            <div class="col-lg-8">
-               <div class="navbar__links">
-                  <a href="#" class="navbar__link">HOME</a>
-                  <a href="#" class="navbar__link">ABOUT&nbsp;ME</a>
-                  <a href="#" class="navbar__link">PORTFOLIO</a>
-                  <a href="#" class="navbar__link">CONTACT&nbsp;ME</a>
-               </div>
+            <div class="col-lg-8">  
+               <ul class="header__links">
+                  <li><a href="#" class="header__link">HOME</a></li>
+                  <li><a href="#" class="header__link">ABOUT&nbsp;ME</a></li>
+                  <li><a href="#" class="header__link">PORTFOLIO</a></li>
+                  <li><a href="#" class="header__link">CONTACT&nbsp;ME</a></li>
+               </ul>
             </div>
-         </nav>
+         </div>
+   </header>
+   <section class="home">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               
+                  <div class="home__block">
+                     <h1 class="home__title" >Dmitri Klimovich</h1>
+                     <span class="home__subtitle1">I am </span><span class="home__subtitle2">Web Developer</span>
+                     <p class="home__text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ea quia ullam accusamus optio, nulla vero nemo quas repellendus et!
+                     </p>
+                  </div>
+               
+
+            </div>
+         </div>
       </div>
-   </div>
+   </section>
+
+   <section class="about">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <h2 class="about__title">
+                  About me
+               </h2>
+               <p class="about__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sint temporibus accusamus minima quis ullam illo quas earum ab hic!
+               </p>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-lg-6">
+               <div class="about__img">
+                  <img src="./img/profile1.jpg" alt="">
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="about__skills">
+                  <h3 class="text-center">
+                     Skills
+                  </h3>
+                  <div class="skill__item">
+                     <h5>HTML5</h5>
+                     <div class="skill__bar ">
+                        <div class="shine bar1 animated wow">
+                           <span class="animated wow">
+                           </span>				
+                        </div>
+                     </div>
+                  </div>
+                  <div class="skill__item">
+                     <h5>CSS</h5>
+                     <div class="skill__bar">
+                        <div class="shine bar2">
+                           <span class="animated wow">
+                           </span>				
+                        </div>
+                     </div>
+                  </div>
+                  <div class="skill__item">
+                     <h5>JavaScript</h5>
+                     <div class="skill__bar">
+                        <div class="shine bar3">
+                           <span class="animated wow">
+                           </span>				
+                        </div>
+                     </div>
+                  </div>
+                  <div class="skill__item">
+                     <h5>React JS</h5>
+                     <div class="skill__bar">
+                        <div class="shine bar4">
+                           <span class="animated wow">
+                           </span>				
+                        </div>
+                     </div>
+                  </div>
+                  <div class="skill__item">
+                     <h5>Webpack</h5>
+                     <div class="skill__bar">
+                        <div class="shine bar5">
+                           <span class="animated wow">
+                           </span>				
+                        </div>
+                     </div>
+                  </div>
+                  <div class="skill__item">
+                     <h5>Photoshop</h5>
+                     <div class="skill__bar">
+                        <div class="shine bar6">
+                           <span class="animated wow">
+                           </span>				
+                        </div>
+                     </div>
+                  </div>
+                  <h3 class="text-center">Socials</h3>
+                  <div class="about__socials">
+                     <a href="#" class="about__socials-link"><i class="fab fa-github"></i></a>
+                     <a href="#" class="about__socials-link"><i class="fab fa-instagram"></i></a>
+                     <a href="#" class="about__socials-link"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 </body>
+
 </html>
