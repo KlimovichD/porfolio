@@ -47,7 +47,6 @@ const cssLoaders = (extra) => {
 
 module.exports = {
    context: path.resolve(__dirname, 'src'),
-   mode: 'development',
    entry: {
       main: ['@babel/polyfill', './index.js']
    },
@@ -71,8 +70,8 @@ module.exports = {
       new CopyWebpackPlugin({
          patterns: [
             {
-               from: path.resolve(__dirname, './src/favicon-32x32.png'),
-               to: path.resolve(__dirname, 'dist')
+               from: path.resolve(__dirname, './src/img'),
+               to: path.resolve(__dirname, 'dist/img')
             }
          ]
       }),
