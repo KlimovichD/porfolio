@@ -64,7 +64,7 @@ module.exports = {
       new HTMLWebpackPlugin({
          template: './index.html',
          minify: {
-            collapseWhitespace: isProd
+            collapseWhitespace: false
          }
       }),
       new CleanWebpackPlugin(),
